@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Super Smash Bros. Ultimate Data Form</title>
+</head>
+
+<style>
+    body {
+        text-align: center;
+        font-family: 'Open Sans', Helvetica, sans-serif;
+        background-color: #002855;
+        color: white;
+    }
+</style>
+
+<body>
+    <div>
+        <form action="saveData.php" method="post">
+            <div class="container">
+                <div class="rows">
+                    <div class="columns">
+                        <h3>Super Smash Bros. Ultimate Data Form</h3>
+                        <p>Fill out the game form with all of the information. Check over the data to ensure accuracy.</p>
+
+                        <label for="mountPlayer"><b>Mount Player: </b></label>
+                        <input id="mountPlayer" type="text" name="mPlayer" required autocomplete="off"><br><br>
+
+                        <label for="mountCharacter"><b>Mount's Character: </b></label>
+                        <input id="mountCharacter" type="text" name="mCharacter" required autocomplete="off"><br><br>
+
+                        <label for="oop"><b>Opponent: </b></label>
+                        <input id="oopPlayer" type="text" name="oPlayer" required autocomplete="off"><br><br>
+
+                        <label for="oopCharacter"><b>Opponent's Character: </b></label>
+                        <input id="oopCharacter" type="text" name="oCharacter" required autocomplete="off"><br><br>
+
+                        <p>Did the Mount win this match: </p>
+                        <input type="radio" id="yes" name="win" value="Yes">
+                        <label for="Yes">Yes</label><br>
+
+                        <input type="radio" id="No" name="win" value="No">
+                        <label for="No">No</label><br><br>
+
+                        <label for="stockD"> <b>Stock Differential: </b></label>
+                        <input type="text" id="stockD" name="stock_dif" required autocomplete="off" maxlength="2" size="4"/><br><br>
+
+                        <label for="streamLink"> Stream Link (if applicable): </label>
+                        <input type="text" id="link" name="streamLink" required autocomplete="off"/><br><br>
+
+                        <input type="submit" id="Submit" name="Submit" value="Submit">
+
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
