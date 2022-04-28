@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Rocket League Game Form</title>
+</head>
+<style>
+    body {
+        text-align: center;
+        font-family: 'Open Sans', Helvetica, sans-serif;
+        background-color: #002855;
+        color: white;
+    }
+</style>
+<body>
+  <div>
+      <form action="saveDataRL.php" method="post">
+        <h3>Rocket League Game form</h3><br>
+        <p>Fill out the information that follows the exact format:</p><br>
+        <img src="postMatchScreenRL.jpg" style="width:800px; height:400px"><br><br>
+
+        <label for="mountPlayer1"><b>Mount Player 1: </b></label>
+        <input id="mountPlayer1" type="text" name="mPlayer1" required maxlength="20" autocomplete="off">
+
+        <label for="goals1"><b>Goals: </b></label>
+        <input id="goals1" type="text" name="goals1" required autocomplete="off" maxlength="2" size="3">
+
+        <label for="assists1"><b>Assists: </b></label>
+        <input id="assists1" type="text" name="assists1" required autocomplete="off" maxlength="2" size="3">
+
+        <label for="saves1"><b>Saves: </b></label>
+        <input id="saves1" type="text" name="saves1" required autocomplete="off" maxlength="2" size="3">
+
+        <label for="shots1"><b>Shots: </b></label>
+        <input id="shots1" type="text" name="shots1" required autocomplete="off" maxlength="2" size="3"><br><br><br>
+
+        <label for="mountPlayer2"><b>Mount Player 2: </b></label>
+        <input id="mountPlayer2" type="text" name="mPlayer2" required  maxlength="20" autocomplete="off">
+
+        <label for="goals2"><b>Goals: </b></label>
+        <input id="goals2" type="text" name="goals2" required autocomplete="off" maxlength="2" size="3">
+
+        <label for="assists2"><b>Assists: </b></label>
+        <input id="assists2" type="text" name="assists2" required autocomplete="off" maxlength="2" size="3">
+
+        <label for="saves2"><b>Saves: </b></label>
+        <input id="saves2" type="text" name="saves2" required autocomplete="off" maxlength="2" size="3">
+
+        <label for="shots2"><b>Shots: </b></label>
+        <input id="shots2" type="text" name="shots2" required autocomplete="off" maxlength="2" size="3"><br><br><br>
+
+        <label for="mountPlayer3"><b>Mount Player 3: </b></label>
+        <input id="mountPlayer3" type="text" name="mPlayer3" required  maxlength="20" autocomplete="off">
+
+        <label for="goals3"><b>Goals: </b></label>
+        <input id="goals3" type="text" name="goals3" required autocomplete="off" maxlength="2" size="3">
+
+        <label for="assists3"><b>Assists: </b></label>
+        <input id="assists3" type="text" name="assists3" required autocomplete="off" maxlength="2" size="3">
+
+        <label for="saves3"><b>Saves: </b></label>
+        <input id="saves3" type="text" name="saves3" required autocomplete="off" maxlength="2" size="3">
+
+        <label for="shots3"><b>Shots: </b></label>
+        <input id="shots3" type="text" name="shots3" required autocomplete="off" maxlength="2" size="3"><br><br><br>
+
+        <p>Did the Mount win this match: </p>
+        <input type="radio" name="win" value="Yes">
+        <label for="Yes">Yes</label><br>
+
+        <input type="radio" name="win" value="No">
+        <label for="No">No</label><br><br><br>
+
+        <label for="streamLink"> Stream Link (if applicable): </label>
+        <input type="text" id="link" name="streamLink" required/><br><br><br>
+
+        <input type="submit" id="Submit" name="Submit" value="Submit">
+
+      </form>
+  </div>
+</body>
+</html>
