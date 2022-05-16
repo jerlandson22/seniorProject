@@ -1,5 +1,5 @@
 <?php
-  $con = mysqli_connect("10.48.26.10", "root", ",mount1808!Esports2022", "esportsDB"); //Connecting goes as follows: IP address, username, password, database
+  $con = mysqli_connect("IP", "root", ",password", "esportsDB"); //Connecting goes as follows: IP address, username, password, database
 
   if (mysqli_connect_errno())
   {
