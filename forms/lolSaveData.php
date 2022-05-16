@@ -1,5 +1,5 @@
 <?php
-  $con = mysqli_connect("10.48.26.10", "root", "mount1808!Esports2022", "lolDB"); //Connecting goes as follows: IP address, username, password, database
+  $con = mysqli_connect("ip", "root", "password", "esportsDB"); //Connecting goes as follows: IP address, username, password, database
     if (mysqli_connect_errno())
   {
       echo "Failed to connect: " + getMessage(); //If the connection fails, throw an error message
